@@ -1,0 +1,54 @@
+[submodule "ruby/rbenv.link"]
+	path = ruby/rbenv.link
+	url = https://github.com/sstephenson/rbenv.git
+[submodule "vim/vim.link/bundle/dustjs.vim"]
+	path = vim/vim.link/bundle/dustjs.vim
+	url = https://github.com/jimmyhchan/dustjs.vim.git
+[submodule "vim/vim.link/bundle/mustache.vim"]
+	path = vim/vim.link/bundle/mustache.vim
+	url = https://github.com/juvenn/mustache.vim.git
+[submodule "vim/vim.link/bundle/vim-coffee-script"]
+	path = vim/vim.link/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/vim.link/bundle/vim-jade"]
+	path = vim/vim.link/bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "vim/vim.link/bundle/vim-markdown"]
+	path = vim/vim.link/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/vim.link/bundle/vim-stylus"]
+	path = vim/vim.link/bundle/vim-stylus
+	url = https://github.com/vim-scripts/vim-stylus.git
+[submodule "vim/vim.link/bundle/nerdtree.vim"]
+	path = vim/vim.link/bundle/nerdtree.vim
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "nvm/nvm.link"]
+	path = nvm/nvm.link
+	url = https://github.com/creationix/nvm.git
+[submodule "vim/vim.link/bundle/zencoding.vim"]
+	path = vim/vim.link/bundle/zencoding.vim
+	url = http://github.com/mattn/zencoding-vim.git
+[submodule "vim/vim.link/bundle/puppet"]
+	path = vim/vim.link/bundle/puppet
+	url = https://github.com/rodjek/vim-puppet.git
+[submodule "vim/vim.link/bundle/haskellmode-vim"]
+	path = vim/vim.link/bundle/haskellmode-vim
+	url = https://github.com/lukerandall/haskellmode-vim.git
+[submodule "vim/vim.link/bundle/ghcmod-vim"]
+	path = vim/vim.link/bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "vim/vim.link/bundle/neco-ghc"]
+	path = vim/vim.link/bundle/neco-ghc
+	url = https://github.com/ujihisa/neco-ghc.git
+[submodule "vim/vim.link/bundle/syntastic"]
+	path = vim/vim.link/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/vim.link/bundle/vimproc"]
+	path = vim/vim.link/bundle/vimproc
+	url = https://github.com/Shougo/vimproc.git
+[submodule "vim/vim.link/bundle/tabular"]
+	path = vim/vim.link/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/vim.link/bundle/vim-fugitive"]
+	path = vim/vim.link/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
