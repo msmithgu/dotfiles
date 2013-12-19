@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/msmith-guerrero/vms/m.shrm.org-config'
+let g:netrw_dirhist_2='/Users/msmith-guerrero/vms/m.shrm.org-config/puppet/modules/sherman'
+let g:netrw_dirhist_3='/Users/msmith-guerrero/vms/m.shrm.org-config'
+let g:netrw_dirhist_4='/Users/msmith-guerrero/git/shrm/cms/dust-designer'
+let g:netrw_dirhist_5='/Users/msmith-guerrero/code/derby/foo/src/app'
+let g:netrw_dirhist_6='/Users/msmith-guerrero/my/dotfiles/zsh'
