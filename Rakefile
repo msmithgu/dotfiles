@@ -17,7 +17,7 @@ task :sync do
     linkables.each do |linkable|
       local_file = linkable.split('/').last.split('.link').last
       system_file = "#{ENV["HOME"]}/.#{local_file}"
-      if File.exists?(target) || File.symlink?(target)
+      if File.exists?(system_file) || File.symlink?(system_file)
         puts "cp -R #{system_file} #{local_file}"
       end
     end
