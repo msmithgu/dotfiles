@@ -3,8 +3,8 @@ require 'rake'
 desc "Install/update git submodules."
 task :submodules do
   puts "install/update git submodules.."
-  `echo git submodule init`
-  `echo git submodule update`
+  `git submodule init`
+  `git submodule update`
 end
 
 desc "Synchronize our working copy with any system changes."
@@ -53,9 +53,9 @@ task :install => [:submodules] do
         end
       end
       FileUtils.rm_rf(target) if overwrite || overwrite_all
-      `echo mv "$HOME/.#{file}" "$HOME/.#{file}.backup"` if backup || backup_all
+      `mv "$HOME/.#{file}" "$HOME/.#{file}.backup"` if backup || backup_all
     end
-    `echo ln -s "$PWD/#{linkable}" "#{target}"`
+    `ln -s "$PWD/#{linkable}" "#{target}"`
   end
 end
 
@@ -71,7 +71,7 @@ task :uninstall do
     
     # Replace any backups made during installation
     if File.exists?("#{ENV["HOME"]}/.#{file}.backup")
-      `echo mv "$HOME/.#{file}.backup" "$HOME/.#{file}"` 
+      `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"` 
     end
 
   end
