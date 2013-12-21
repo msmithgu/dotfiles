@@ -7,9 +7,17 @@ task :submodules do
   `git submodule update`
 end
 
+def overwrite(target, source)
+  if File.exists?(source) || File.symlink?(source)
+    `rm #{source}`
+    `cp -RH #{source} #{source}`
+  end
+end
+
 desc "Synchronize our working copy with any system changes."
 task :sync do
-  working_changes = `git status --porcelain | wc`.strip.split.first.to_i
+  working_changes = 0
+  #working_changes = `git status --porcelain | wc`.strip.split.first.to_i
   if working_changes > 0
     puts "Commit or discard local changes before attempting sync."
   else
@@ -17,10 +25,7 @@ task :sync do
     linkables.each do |linkable|
       local_file = linkable.split('/').last.split('.link').last
       system_file = "#{ENV["HOME"]}/.#{local_file}"
-      if File.exists?(system_file) || File.symlink?(system_file)
-        `rm #{linkable}`
-        `cp -RH #{system_file} #{linkable}`
-      end
+      overwrite(linkable, system_file)
     end
   end
 end
