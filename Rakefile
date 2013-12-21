@@ -38,6 +38,7 @@ task :install => [:submodules] do
   overwrite_all = false
   backup_all = false
 
+  `rm -f $PWD/fish/config.fish`
   `ln -s $PWD/fish/config.fish #{ENV["HOME"]}/.config/fish/config.fish`
 
   linkables.each do |linkable|
