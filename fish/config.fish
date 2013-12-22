@@ -12,7 +12,7 @@ set fish_greeting
 #set fish_custom $HOME/dotfiles/oh-my-fish
 
 # Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
+source $fish_path/oh-my-fish.fish
 
-. $HOME/dotfiles/fish/functions/swap_theme.fish
+source $HOME/dotfiles/fish/functions/swap_theme.fish
 swap_theme jacaetevha
