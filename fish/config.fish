@@ -16,3 +16,5 @@ source $fish_path/oh-my-fish.fish
 
 source $HOME/dotfiles/fish/functions/swap_theme.fish
 swap_theme jacaetevha
+
+source_script --bash $HOME/.nvm/nvm.sh
