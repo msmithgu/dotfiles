@@ -49,3 +49,12 @@
 [submodule "fish/oh-my-fish.link"]
 	path = fish/oh-my-fish.link
 	url = https://github.com/bpinto/oh-my-fish.git
+[submodule "vim/vim.link/bundle/vim-fireplace"]
+	path = vim/vim.link/bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
+[submodule "vim/vim.link/bundle/vim-classpath"]
+	path = vim/vim.link/bundle/vim-classpath
+	url = git://github.com/tpope/vim-classpath.git
+[submodule "vim/vim.link/bundle/vim-clojure-static"]
+	path = vim/vim.link/bundle/vim-clojure-static
+	url = git://github.com/guns/vim-clojure-static.git
