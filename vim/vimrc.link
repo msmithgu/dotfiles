@@ -6,6 +6,10 @@ filetype plugin indent on
 
 set mouse=a
 
+if $SHELL =~ 'fish'
+  set shell=/bin/bash
+endif
+
 let g:haddock_browser="/Applications/Google Chrome"
 
 " ----------------------------------------------------------------------------
