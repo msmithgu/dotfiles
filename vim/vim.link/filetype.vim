@@ -21,3 +21,4 @@ au BufRead,BufNewFile *.jade      map <buffer> <S-e> :w<CR>:!/usr/bin/env jade %
 au BufRead,BufNewFile Makefile    map <buffer> <S-e> :w<CR>:!/usr/bin/env make <CR>
 au BufRead,BufNewFile *.screenrc  map <buffer> <S-e> :w<CR>:!/usr/bin/env screen -c % <CR>
 au BufRead,BufNewFile *.coffee    map <buffer> <S-e> :w<CR>:!/usr/bin/env coffee % <CR>
+au BufRead,BufNewFile *.fish    map <buffer> <S-e> :w<CR>:!/usr/bin/env fish % <CR>

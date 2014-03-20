@@ -73,6 +73,8 @@ set shortmess=filtIoOA     " shorten messages
 set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 set hidden                 " keep undo histories on hidden buffers
+set foldmethod=indent
+set nofoldenable
 
 " ----------------------------------------------------------------------------
 " Visual Cues
@@ -282,6 +284,13 @@ map , @@
 " write and reload browser
 nmap <silent> ;w :w<CR>:let x=system('sleep 1; osascript -e "tell application \"Google Chrome\" to reload active tab of window 1"')<CR>
 
+function DeleteHiddenBuffers()
+  let tpbl=[]
+  call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+  for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+    silent execute 'bwipeout' buf
+  endfor
+endfunction
 
 " Copy the whole buffer to clipboard with ctrl-c
 au BufRead,BufNewFile * map <buffer> <C-c> :!pbcopy<CR>u
