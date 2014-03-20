@@ -58,3 +58,6 @@
 [submodule "vim/vim.link/bundle/vim-clojure-static"]
 	path = vim/vim.link/bundle/vim-clojure-static
 	url = git://github.com/guns/vim-clojure-static.git
+[submodule "vim/vim.link/bundle/slimv"]
+	path = vim/vim.link/bundle/slimv
+	url = https://github.com/kovisoft/slimv.git
