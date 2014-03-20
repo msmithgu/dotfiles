@@ -19,4 +19,10 @@ source $fish_path/oh-my-fish.fish
 source $HOME/dotfiles/fish/functions/swap_theme.fish
 swap_theme jacaetevha
 
-source_script --bash $HOME/.nvm/nvm.sh
+set NVM_DIR ~/.nvm
+source ~/.nvm-fish/nvm.fish
+
+set PATH $PATH ~/.cabal/bin
+
+set -gx RBENV_ROOT /usr/local/var/rbenv
+. (rbenv init -|psub)
